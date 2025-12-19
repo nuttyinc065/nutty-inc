@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NuttyOS · Windows-inspired experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky"></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="tile"></div>
+      <span class="logo-text">NuttyOS</span>
+      <span class="tag">Windows-inspired</span>
+    </div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#desktop">Desktop</a>
+      <a href="#download">Download</a>
+    </nav>
+    <button class="pill ghost" id="startToggle">Start</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Productivity-first shell</p>
+        <h1>Meet NuttyOS</h1>
+        <p class="lede">A sleek, Windows-inspired workspace that blends familiar navigation with a modern, buttery-smooth UI. Everything you need is one click away.</p>
+        <div class="actions">
+          <a class="pill primary" href="#download">Download preview</a>
+          <button class="pill ghost" id="openDesktop">Peek at the desktop</button>
+        </div>
+        <div class="status">
+          <div class="dot"></div>
+          <span>Build 2411 • Fast boot • Fluent panels</span>
+        </div>
+      </div>
+      <div class="glass desktop-preview" id="desktop">
+        <div class="title-bar">
+          <div class="lights">
+            <span class="light red"></span>
+            <span class="light yellow"></span>
+            <span class="light green"></span>
+          </div>
+          <span class="title">Desktop · NuttyOS</span>
+        </div>
+        <div class="desktop-grid">
+          <div class="tile" data-window="files">
+            <div class="icon folder"></div>
+            <span>Files</span>
+          </div>
+          <div class="tile" data-window="browser">
+            <div class="icon browser"></div>
+            <span>EdgeSpace</span>
+          </div>
+          <div class="tile" data-window="terminal">
+            <div class="icon terminal"></div>
+            <span>Terminal</span>
+          </div>
+          <div class="tile" data-window="store">
+            <div class="icon store"></div>
+            <span>Store</span>
+          </div>
+          <div class="tile" data-window="notes">
+            <div class="icon note"></div>
+            <span>Sticky Notes</span>
+          </div>
+          <div class="tile" data-window="clock">
+            <div class="icon clock"></div>
+            <span>Clock</span>
+          </div>
+        </div>
+        <div class="taskbar">
+          <div class="start" id="startToggle2">❖</div>
+          <div class="taskbar-app active">Files</div>
+          <div class="taskbar-app">EdgeSpace</div>
+          <div class="taskbar-app">Store</div>
+          <div class="tray">
+            <span class="pill tiny">Wi‑Fi</span>
+            <span class="pill tiny">98%</span>
+            <span class="pill tiny" id="clock">12:45</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-header">
+        <p class="eyebrow">Why NuttyOS</p>
+        <h2>Familiar, but better</h2>
+        <p class="lede">From the Start menu to snap layouts, NuttyOS keeps the things you love about Windows while leveling up speed, clarity, and focus.</p>
+      </div>
+      <div class="grid features-grid">
+        <article class="card">
+          <div class="icon badge">⚡</div>
+          <h3>Instant boot & resume</h3>
+          <p>Lean boot pipeline delivers a responsive desktop in under 5 seconds with hybrid sleep for near-instant wake.</p>
+        </article>
+        <article class="card">
+          <div class="icon badge">🪟</div>
+          <h3>Fluent panels</h3>
+          <p>Glassmorphic shells, adaptive blur, and subtle depth cues give every window the polish of a flagship OS.</p>
+        </article>
+        <article class="card">
+          <div class="icon badge">🧩</div>
+          <h3>Seamless compatibility</h3>
+          <p>Runs classic Win apps alongside new PWA-style experiences without sacrificing stability or battery life.</p>
+        </article>
+        <article class="card">
+          <div class="icon badge">🗂️</div>
+          <h3>Snap flow</h3>
+          <p>Drag to corners for intelligent tiling, create saved layouts for workflows, and jump back with one shortcut.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section duo">
+      <div class="card glass story">
+        <p class="eyebrow">Designed for creators</p>
+        <h2>Keep the Start experience you know—just faster.</h2>
+        <p class="lede">Pinned apps, quick search, and smart recommendations live in a familiar Start surface with richer shortcuts and live system stats.</p>
+        <div class="quick-list">
+          <span class="pill">Pinned</span>
+          <span class="pill">Recent</span>
+          <span class="pill">Workspaces</span>
+          <span class="pill">System</span>
+        </div>
+      </div>
+      <div class="card glass start-menu" id="startMenu">
+        <div class="start-header">
+          <div>
+            <p class="eyebrow">Start</p>
+            <h3>Everything in one place</h3>
+          </div>
+          <button class="pill tiny ghost" id="closeStart">✕</button>
+        </div>
+        <div class="pinned">
+          <div class="pin">Files</div>
+          <div class="pin">EdgeSpace</div>
+          <div class="pin">Mail</div>
+          <div class="pin">Photos</div>
+          <div class="pin">Store</div>
+          <div class="pin">Terminal</div>
+        </div>
+        <div class="recommendations">
+          <p class="eyebrow">Recommended</p>
+          <ul>
+            <li><span>Project Walnut</span><small>Edited 3m ago</small></li>
+            <li><span>Design kit.figma</span><small>Opened 17m ago</small></li>
+            <li><span>Setup wizard</span><small>New install</small></li>
+          </ul>
+        </div>
+        <div class="system-row">
+          <div class="pill">Settings</div>
+          <div class="pill">Profile</div>
+          <div class="pill">Power ▾</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section">
+      <div class="section-header">
+        <p class="eyebrow">Get started</p>
+        <h2>Download NuttyOS Preview</h2>
+        <p class="lede">Grab the latest ISO and pair it with the NuttyOS companion app for updates and recovery tools.</p>
+      </div>
+      <div class="grid steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <div>
+            <h3>Download ISO</h3>
+            <p>Get the 64-bit image optimized for secure boot and modern hardware.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <div>
+            <h3>Create installer</h3>
+            <p>Flash to USB with the NuttyOS Maker, then boot with UEFI enabled.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <div>
+            <h3>Sign in & sync</h3>
+            <p>Restore your apps, layouts, and theme from the cloud in under 5 minutes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="pill primary" href="#">Download (3.2 GB)</a>
+        <a class="pill ghost" href="#">View release notes</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">
+      <div class="tile"></div>
+      <span class="logo-text">NuttyOS</span>
+    </div>
+    <p>Built for people who want Windows ease with next-gen speed.</p>
+    <div class="foot-links">
+      <a href="#">Privacy</a>
+      <a href="#">Support</a>
+      <a href="#">Status</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
