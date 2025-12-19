@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NuttyOS | Web Desktop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky"></div>
+  <main class="desktop">
+    <header class="info-card">
+      <div>
+        <p class="eyebrow">WELCOME TO</p>
+        <h1>NuttyOS</h1>
+        <p class="lede">A playful Windows-inspired web desktop built just for you.</p>
+      </div>
+      <div class="pill">Beta</div>
+    </header>
+
+    <section class="icon-grid" aria-label="Desktop icons">
+      <button class="icon" data-app="explorer">
+        <span class="icon-emoji">🗂️</span>
+        <span>File Explorer</span>
+      </button>
+      <button class="icon" data-app="browser">
+        <span class="icon-emoji">🌐</span>
+        <span>Nutty Browser</span>
+      </button>
+      <button class="icon" data-app="notes">
+        <span class="icon-emoji">📝</span>
+        <span>Sticky Notes</span>
+      </button>
+      <button class="icon" data-app="gallery">
+        <span class="icon-emoji">🖼️</span>
+        <span>Gallery</span>
+      </button>
+    </section>
+  </main>
+
+  <div class="start-menu" id="start-menu" aria-hidden="true">
+    <div class="start-header">
+      <div class="start-logo">N</div>
+      <div>
+        <p class="eyebrow">NuttyOS</p>
+        <p class="start-title">Quick launch</p>
+      </div>
+    </div>
+    <div class="start-links">
+      <button data-app="explorer">📁 Open files</button>
+      <button data-app="browser">🧭 Launch Nutty Browser</button>
+      <button data-app="notes">🧠 Open notes</button>
+      <button data-app="gallery">🌄 View gallery</button>
+    </div>
+    <p class="start-foot">Tip: double-click the desktop icons to open windows.</p>
+  </div>
+
+  <div class="window" id="app-window" hidden>
+    <div class="window-bar">
+      <div class="window-title" id="window-title">NuttyOS</div>
+      <button class="close" id="close-window" aria-label="Close window">✕</button>
+    </div>
+    <div class="window-body" id="window-body"></div>
+  </div>
+
+  <footer class="taskbar" aria-label="Taskbar">
+    <button class="start" id="start-button" aria-controls="start-menu">
+      <span class="start-icon">⊞</span>
+      <span>NuttyOS</span>
+    </button>
+    <div class="taskbar-pins">
+      <span class="pin">🗂️</span>
+      <span class="pin">🌐</span>
+      <span class="pin">📝</span>
+      <span class="pin">⚙️</span>
+    </div>
+    <div class="taskbar-clock" id="taskbar-clock"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
