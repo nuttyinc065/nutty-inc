@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NuttyOS · A Windows-inspired web experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">NuttyOS 11 preview</p>
+      <h1>Windows comfort. Nutty speed.</h1>
+      <p class="lede">Meet NuttyOS, a playful desktop that blends the familiarity of Windows with a faster, friendlier web-first experience.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#download">Download ISO</a>
+        <a class="btn btn-ghost" href="#features">Explore features</a>
+      </div>
+    </div>
+    <div class="hero__window" role="presentation">
+      <div class="window">
+        <div class="window__topbar">
+          <div class="window__traffic">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+          </div>
+          <div class="window__title">File Explorer · NuttyOS</div>
+        </div>
+        <div class="window__body">
+          <div class="desktop">
+            <div class="desktop__tile">
+              <span class="emoji" aria-hidden="true">🪟</span>
+              <p>System</p>
+            </div>
+            <div class="desktop__tile">
+              <span class="emoji" aria-hidden="true">📂</span>
+              <p>Files</p>
+            </div>
+            <div class="desktop__tile">
+              <span class="emoji" aria-hidden="true">🌐</span>
+              <p>Browser</p>
+            </div>
+            <div class="desktop__tile">
+              <span class="emoji" aria-hidden="true">🎮</span>
+              <p>Play</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="panel">
+      <div class="panel__header">
+        <h2>Why NuttyOS feels like home</h2>
+        <p>Classic shortcuts, centered taskbar, and delightful micro-interactions keep you comfortable while the system stays fast.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">⚡</div>
+          <h3>Fast boot</h3>
+          <p>Optimized startup and a lean kernel bring you to the desktop in seconds.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">🪟</div>
+          <h3>Window snap</h3>
+          <p>Snap Assist keeps windows tidy with intuitive keyboard shortcuts.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">🔐</div>
+          <h3>Secure core</h3>
+          <p>Sandboxed apps and encrypted storage help keep your workspace safe.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">🎨</div>
+          <h3>Live themes</h3>
+          <p>Dynamic wallpapers and light/dark modes that adapt to your environment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel panel--alt">
+      <div class="panel__header">
+        <h2>Start menu that just works</h2>
+        <p>Pin favorites, search instantly, and jump back into your most recent work without friction.</p>
+      </div>
+      <div class="startmenu">
+        <div class="startmenu__left">
+          <h4>Pinned</h4>
+          <ul class="startmenu__grid">
+            <li>Browser</li>
+            <li>Mail</li>
+            <li>Files</li>
+            <li>Studio</li>
+            <li>Play</li>
+            <li>Store</li>
+          </ul>
+        </div>
+        <div class="startmenu__right">
+          <h4>Recommended</h4>
+          <div class="recents">
+            <div>
+              <p class="label">Design Board.fig</p>
+              <p class="muted">Edited 2h ago</p>
+            </div>
+            <div>
+              <p class="label">NuttyOS Release Notes</p>
+              <p class="muted">Yesterday</p>
+            </div>
+            <div>
+              <p class="label">Terminal logs</p>
+              <p class="muted">This week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="panel">
+      <div class="panel__header">
+        <h2>Ready to try NuttyOS?</h2>
+        <p>Grab the ISO, flash it to a USB drive, and boot into your new desktop in under ten minutes.</p>
+      </div>
+      <div class="download">
+        <div>
+          <p class="muted">NuttyOS 11 · Build 2407</p>
+          <p class="label">Includes desktop shell, core apps, and developer tools.</p>
+        </div>
+        <a class="btn btn-primary" href="#">Download</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">NuttyOS</div>
+    <p class="muted">Windows-inspired, web-powered. Crafted by the Nutty team.</p>
+  </footer>
+</body>
+</html>
