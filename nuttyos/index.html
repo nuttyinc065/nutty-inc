@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NuttyOS | A Windows-inspired Workspace</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon" aria-hidden="true">🪟</span>
+      <div>
+        <div class="brand-title">NuttyOS</div>
+        <div class="brand-subtitle">Windows-style desktop experience</div>
+      </div>
+    </div>
+    <nav class="nav-actions">
+      <a href="#features">Features</a>
+      <a href="#preview">Preview</a>
+      <a class="pill" href="#cta">Get NuttyOS</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Familiar, fast, friendly</p>
+        <h1>Meet NuttyOS &mdash; a Windows-inspired desktop crafted for focus.</h1>
+        <p class="lede">A clean taskbar, floating windows, and a Start menu that keeps your shortcuts and productivity tools within reach.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#cta">Launch the experience</a>
+          <a class="btn ghost" href="#preview">See how it works</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-labelledby="preview-title">
+        <div class="desktop" id="preview">
+          <div class="window active">
+            <div class="window-titlebar">
+              <span class="window-title">File Explorer</span>
+              <div class="window-controls" aria-hidden="true">
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+                <span class="control close"></span>
+              </div>
+            </div>
+            <div class="window-body">
+              <div class="columns">
+                <ul class="sidebar">
+                  <li class="muted">Quick Access</li>
+                  <li class="pill">Desktop</li>
+                  <li>Documents</li>
+                  <li>Downloads</li>
+                  <li>Pictures</li>
+                </ul>
+                <div class="content">
+                  <div class="breadcrumb">This PC / Desktop</div>
+                  <div class="tiles">
+                    <div class="tile">
+                      <span class="tile-icon">📄</span>
+                      <span>Project Brief.docx</span>
+                    </div>
+                    <div class="tile">
+                      <span class="tile-icon">📁</span>
+                      <span>NuttyOS</span>
+                    </div>
+                    <div class="tile">
+                      <span class="tile-icon">🖼️</span>
+                      <span>Hero.png</span>
+                    </div>
+                    <div class="tile">
+                      <span class="tile-icon">🎵</span>
+                      <span>Focus Track.mp3</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="window secondary">
+            <div class="window-titlebar">
+              <span class="window-title">Settings</span>
+              <div class="window-controls" aria-hidden="true">
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+                <span class="control close"></span>
+              </div>
+            </div>
+            <div class="window-body">
+              <div class="settings-grid">
+                <div>
+                  <p class="muted">Personalization</p>
+                  <h3>Choose your accent color</h3>
+                  <div class="swatches">
+                    <span class="swatch" aria-label="Azure accent"></span>
+                    <span class="swatch emerald" aria-label="Emerald accent"></span>
+                    <span class="swatch plum" aria-label="Plum accent"></span>
+                  </div>
+                </div>
+                <div>
+                  <p class="muted">Layout</p>
+                  <h3>Snap &amp; focus modes</h3>
+                  <ul class="bullets">
+                    <li>Snap Assist with two or three column layouts</li>
+                    <li>Smart focus mode for distraction-free writing</li>
+                    <li>Keyboard shortcuts for switching virtual desktops</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="taskbar" aria-label="NuttyOS taskbar">
+            <button class="start-button" id="startButton" aria-haspopup="true" aria-controls="startMenu">
+              <span class="start-icon" aria-hidden="true">🪟</span>
+              <span class="start-label">Start</span>
+            </button>
+            <div class="taskbar-icons" aria-label="Pinned apps">
+              <span aria-hidden="true">🗂️</span>
+              <span aria-hidden="true">🌐</span>
+              <span aria-hidden="true">💬</span>
+              <span aria-hidden="true">🎵</span>
+            </div>
+            <div class="system-tray">
+              <span class="tray-icon" aria-hidden="true">🔔</span>
+              <span class="tray-icon" aria-hidden="true">📶</span>
+              <span class="tray-icon" aria-hidden="true">🔋</span>
+              <span class="clock" id="clock" aria-label="Clock"></span>
+            </div>
+          </div>
+
+          <div class="start-menu" id="startMenu" aria-label="Start menu">
+            <div class="start-header">
+              <div>
+                <p class="muted">Welcome back</p>
+                <h3>NuttyOS</h3>
+              </div>
+              <div class="user-avatar" aria-hidden="true">N</div>
+            </div>
+            <div class="start-grid">
+              <div class="start-card">
+                <p class="muted">Productivity</p>
+                <h4>Focus Workspace</h4>
+                <p>Launch a tidy layout with your writing, browser, and messaging apps.</p>
+              </div>
+              <div class="start-card">
+                <p class="muted">Create</p>
+                <h4>Canvas Studio</h4>
+                <p>Jump into design mode with color-calibrated windows and asset panes.</p>
+              </div>
+              <div class="start-card">
+                <p class="muted">System</p>
+                <h4>Quick Settings</h4>
+                <p>Toggle dark mode, adjust sound, and manage notifications in one click.</p>
+              </div>
+            </div>
+            <div class="start-footer">
+              <button class="btn ghost">Pin apps</button>
+              <button class="btn primary">Open dashboard</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="section-heading">
+        <p class="eyebrow">Why NuttyOS</p>
+        <h2>All the Windows comforts with a Nutty twist.</h2>
+        <p class="lede">Built to feel familiar from the moment you click Start: streamlined windows, smart snapping, and a crisp taskbar you already know how to use.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Windowing that makes sense</h3>
+          <p>Drag, snap, and stack your workspaces with pixel-perfect alignment. NuttyOS keeps your windows organized with subtle depth and shadow cues.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Start menu that gets you</h3>
+          <p>Pin what matters, filter by activity, and jump into curated work modes without digging through folders.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Taskbar ready for focus</h3>
+          <p>A centered tray, soft glyphs, and live status updates keep you informed without stealing attention from your work.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Beautiful and accessible</h3>
+          <p>High-contrast palettes, keyboard-friendly navigation, and crisp typography make NuttyOS comfortable day or night.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="cta-card">
+        <div>
+          <p class="eyebrow">Ready to try it?</p>
+          <h2>Boot into NuttyOS today.</h2>
+          <p class="lede">Download the preview build, explore the Start menu, and arrange your windows just how you like them.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn primary" href="#">Download for desktop</a>
+          <a class="btn ghost" href="#features">View release notes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">NuttyOS</div>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#">Support</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-note">Built with a love for clean Windows-inspired design.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
