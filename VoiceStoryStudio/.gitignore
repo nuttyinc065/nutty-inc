@@ -1,0 +1,24 @@
+# All output/recordings/private story data must remain local.
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+output/
+outputs/
+private_voice_project/
+VoiceStoryStudio-output/
+job_*/
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.ogg
+*.aac
+*.m4b
+*.mp4
+*.mov
+*.log
+*.partial.*
+.env
+.DS_Store

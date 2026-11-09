@@ -1,0 +1,5 @@
+# Python 3.11 recommended. Git and ffmpeg must be installed.
+# GitHub source pinned to a commit that contains the Nano model API.
+chatterbox-tts @ git+https://github.com/resemble-ai/chatterbox.git@ab55923c27757c90cfcc407baa57dc25a7d25217
+numpy>=1.24
+soundfile>=0.12
